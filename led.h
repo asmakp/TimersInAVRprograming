@@ -8,5 +8,8 @@ void LED_init(void);
 
 void LED_FadingWitnPWM(void);
 
+uint8_t simple_ramp(void); //Declaration of simple_ramp function
+void LED_Rampning(void);
+
 #endif // _LED_H_
 

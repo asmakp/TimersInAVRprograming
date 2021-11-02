@@ -19,22 +19,30 @@ void main (void) {
 
  
  	//DELUPPGIFT 2: Vary brightness with  PWM
-	 DDRD |= (1<<LED_PIN_PWM);
+	// DDRD |= (1<<LED_PIN_PWM);
 	 timer_intitPWM();
+
+
+	//DELUPPGIFT 3: LED-RAMPNING
+	 DDRD |= (1<<LED_PIN_PWM);
+	 timer2_init();
 
 	while (1){
 
 		//printf_P(PSTR("in while loop\n"));
          
         //DELUPPGIFT 1: BLINKA LED
-	     //  LED_init();
+	    //LED_init();
  		
 		
 		//DELUPPGIFT 2: Vary brightness with  PWM
         //f_OCnx PWM = f_(clk i/o)/(N*256)  gives frequency 10MHz after rounding.
- 		LED_FadingWitnPWM();
+ 		//LED_FadingWitnPWM();
 
-		
+
+		//DELUPPGIFT 3:LED-RAMPNING
+		 LED_Rampning();
+	    
   }
 }
 
