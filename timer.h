@@ -2,5 +2,7 @@
 #define _TIMER_H_
 
 void timer_init(void);
+void timer_initPWM(void);
+
 
 #endif // _TIMER_H_
