@@ -1,3 +1,5 @@
+//ASMA KHALID PATEL
+//IOT 2020
 #include <avr/io.h>
 #include <avr/pgmspace.h> //Program Space Utilities
 #include <util/delay.h>
@@ -20,7 +22,7 @@ void main (void) {
  
  	//DELUPPGIFT 2: Vary brightness with  PWM
 	// DDRD |= (1<<LED_PIN_PWM);
-	 timer_intitPWM();
+	// timer_intitPWM();
 
 
 	//DELUPPGIFT 3: LED-RAMPNING

@@ -1,6 +1,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include "led.h"
+
 static int TimeVariable = 0; //variable for blink function
 static int dutyCycle  = 0;   //variable for fading function
 static int counter = 0;      //variable for led rampling  function
